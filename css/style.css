@@ -38,6 +38,31 @@ nav{
 nav .menu li{
 	list-style: none;
 }
+
+
+/*Estilos para la pagina de paisajes y retratos*/
+
+.column-header {
+	column-count: 3;
+}
+
+.column-header .column img{
+	width: 100%;
+	margin: 3px;
+	column-span: all;
+}
+
+.column-header .column .primera{
+	filter: blur(10px);
+}
+
+.column-header .column  .pares{
+	filter: grayscale(100%);	
+}
+
+.column-header .column .tercera{
+	filter: sepia(90%);
+}
 nav .menu a{
 	text-decoration: none;
 	color: white;
