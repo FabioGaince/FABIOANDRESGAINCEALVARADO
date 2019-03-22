@@ -1,0 +1,147 @@
+
+/*Le quitamos los margenes y los padding que trae la pagina por defecto*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #02010a;
+	font-family: "Dancing Script"; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 7002 
+	line-height: 26.4px;
+}
+/*Se especifica que el sitio web ocupe el 80%, que se ajuste automaicamente*/
+.contenido{
+	width: 100%; 
+	max-width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*Estilos para el menu*/
+nav{
+	position: absolute;
+	left: 85%;
+	top: 10px;
+	margin: 10px;
+}
+
+.menu{
+	background: #5b7989;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+nav .menu li{
+	list-style: none;
+}
+nav .menu a{
+	text-decoration: none;
+	color: white;
+}
+
+/*Estilos para la cabecera*/
+header{
+	background: #5b7989;
+	margin: 20px 0;
+	box-shadow: 2px;
+	color: #02010a;
+	border-radius: 10px 10px 0 0;
+}
+/*Se le agrego un espaciado al titulo del texto*/
+header h1{
+	text-align: left;
+	color: white;
+}
+
+.imagenes{
+	width: 100%;
+	padding: 10px;	
+	box-sizing: border-box;
+}
+
+.imagenes .img-centrada img{
+	width: 100%;
+	max-width: 600px;
+	box-shadow: 2px;
+	color:  #02010a;
+	display: block;	
+	margin: auto;
+}
+
+.imagenes .img-centrada{
+  margin: auto;
+}
+
+/*Para posicionar la imagen secundaria*/
+.imagenes .img-secundaria{
+	width: 100%;
+	margin: 20px;
+	display:inline-block;
+	box-sizing: border-box;	
+}
+
+.imagenes .img-secundaria img{
+	background: #d5c75f;
+	border: 1px;
+	width: 30%;
+	height: 30%;
+}
+/*Estilos de la imagen retrato con su animación*/
+#sec1{
+	position: absolute;
+	right: 15%;
+	margin-right: 3%;
+}
+
+#sec1:hover{
+	transform: translate(5px,20px);
+	color: #82c3a6;
+	border: 2px;
+}
+/*Estilos de la imagen paisaje con su animación*/
+#sec2{
+	position: absolute;
+	left: 15%;
+	margin-left: 3%; 
+}
+
+#sec2:hover{
+	transform: rotate(10deg); 
+	color: #82c3a6;
+	border: 2px;
+}
+/*Estilos para el footer*/
+.pie{
+	width: 80%;
+	position: fixed;
+	bottom: 0;
+	border-radius: 0 0 10px 10px;
+	background: #C6d5c5; 
+	max-width: 900px;
+	height: 70px;
+}
+/* para crear columas*/
+.cols {
+    box-sizing: border-box;
+    overflow: auto;
+}
+.cols .col {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+.cols .col:last-of-type {
+    float: right;
+    margin-right: 0;
+}
+.cols .col{
+	list-style:none;
+}
+/*se le quitan los puntos a la lista*/
+li{
+	list-style:none;
+}
